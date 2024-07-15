@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "Hacker News New Tab",
+  "version": "0.1.0",
+  "description": "Open hacker news in a new tab",
+  "icons": {
+    "48": "icons/hn-newtab-48.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://news.ycombinator.com/*",
+        "http://news.ycombinator.com/*"
+      ],
+      "js": ["jquery-1.9.1.min.js", "hn-newtab.js"]
+    }
+  ]
+}
